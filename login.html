@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+<html>
+  <head>
+    <title>Сюрприз</title>
+    <meta charset="UTF-8"/>
+    <script>
+
+    function validate(){
+    var log="кирилл",
+        pas="4991пельменивасилина",
+        login_ok = false,
+        user_name,
+        password;
+    user_name = prompt("Назовись","")||"";
+    user_name = user_name.toLowerCase();
+    password = prompt("Пароль - это дата моего рождения в обратном порядке+твоя любимая еда+имя кошки твоей бабушки","")||"";
+    password = password.toLowerCase();
+    if (user_name== log && password== pas) {
+     login_ok=true;
+     window.location="file:///Users/oksanaduga/Documents/startPage.html";
+    }
+    if (login_ok==false) {alert("Неверный логин или пароль!")};
+    }
+    </script>
+  </head>
+  <body>
+    <div align="center">
+     <form>
+      <input type="button" value="Поздравиться" onClick="validate()">
+     </form>
+    </div>
+  </body
+</html>
